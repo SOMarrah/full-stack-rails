@@ -1,9 +1,9 @@
 <h1>Herb Garden App</h1>
 
-<% @herbs.each do |herb| %>
 <ul>
+<% @herbs.each do |herb| %>
 <li>
-<%= herb.name %>
+<%= link_to herb.name, herb_path(herb) %>
 </li>
-</ul>
 <%end%>
+</ul>
